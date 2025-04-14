@@ -31,6 +31,11 @@ class TestPalindrome(unittest.TestCase):
 
     def test_non_palindrome_phrase(self):
         self.assertFalse(is_palindrome("This is not a palindrome"))  # No es un palíndromo
+        self.assertFalse(is_palindrome("Python programming"))  # No es un palíndromo
+        self.assertFalse(is_palindrome("12345"))  # No es un palíndromo numérico
+        self.assertFalse(is_palindrome("Palindrome test case"))  # No es un palíndromo
+        self.assertFalse(is_palindrome("Almost a palindrome"))  # No es un palíndromo
+        self.assertFalse(is_palindrome("Hello, world!"))  # No es un palíndromo
 
     def test_empty_string(self):
         self.assertTrue(is_palindrome(""))  # Una cadena vacía es un palíndromo
