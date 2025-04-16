@@ -1,7 +1,6 @@
 import unittest
 import re
 
-# Definición de la función is_palindrome dentro del archivo test.py
 def is_palindrome(text):
     """
     Verifica si un texto es un palíndromo.
