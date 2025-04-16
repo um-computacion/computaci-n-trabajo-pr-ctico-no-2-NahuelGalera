@@ -1,3 +1,4 @@
+
 import unittest
 from src.palindrome import is_palindrome  # Importa la función desde src/palindrome.py
 
@@ -10,10 +11,12 @@ class TestPalindrome(unittest.TestCase):
 
     def test_phrase_palindrome(self):
         self.assertTrue(is_palindrome("Anita lava la tina"))  # Palíndromo válido con espacios y mayúsculas
+
         self.assertTrue(is_palindrome("A Santa at NASA"))  # Palíndromo válido con espacios y mayúsculas
         self.assertTrue(is_palindrome("No lemon, no melon"))  # Palíndromo válido con puntuación
         self.assertTrue(is_palindrome("Was it a car or a cat I saw"))  # Palíndromo válido con espacios
         self.assertTrue(is_palindrome("Eva, can I see bees in a cave?"))  # Palíndromo válido con puntuación y espacios
+
 
     def test_phrase_with_punctuation(self):
         self.assertTrue(is_palindrome("A man, a plan, a canal: Panama"))  # Palíndromo válido con puntuación
